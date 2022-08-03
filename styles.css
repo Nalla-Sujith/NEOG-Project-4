@@ -13,13 +13,15 @@ body{
 .navigation
 {
     background-color: var(--primary-color);
+    border-bottom-left-radius:0.5rem ;
+    border-bottom-right-radius:0.5rem ;
 }
 .nav-header
 {
   text-align: center;
   font-size:2rem;
   font-weight: bold;
-  padding: 2rem 0rem;;
+  padding: 2rem 0rem;
 }
 /** textarea**/
 .container
@@ -56,6 +58,8 @@ body{
 .footer
 {
   background-color: var(--primary-color);
+  border-top-right-radius:0.5rem ;
+  border-top-left-radius:0.5rem ;
   font-size: larger;
   font-weight: bold;
   text-align: center;
