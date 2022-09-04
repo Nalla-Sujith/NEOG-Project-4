@@ -8,14 +8,15 @@ function geturl(text)
 }
 function errorhandler(error)
 {
-    console.log("Error is "+error)
+  alert("Please try again Later!!!")
+  console.log("Error is "+error)
 }
 function handleclick()
 {
   var text=txtarea.value;
   fetch(geturl(text))
   .then((response)=>response.json())
-  .then(text => navdiv.innerText=""+text.contents['translated'])
+  .then(text => navdiv.innerText=""+text.contents['translation'])
   .catch(errorhandler)
 }
 navbutton.addEventListener("click",handleclick);
